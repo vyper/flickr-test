@@ -1,0 +1,17 @@
+@import 'flat-ui/variables';
+@import 'bootstrap';
+@import 'flat-ui';
+
+@import 'font-awesome';
+
+#pictures {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    list-style: none;
+    margin-bottom: 25px;
+  }
+}

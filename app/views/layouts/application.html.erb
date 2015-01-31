@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FlickrTest</title>
+  <title>Flickr Pics (:</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<div class="container">
+  <%= render 'shared/header' %>
 
-<%= yield %>
+  <div class="row">
+    <div class="container">
+      <%= render 'shared/flash' %>
+
+      <%= yield %>
+    </div>
+  </div>
+
+  <%= render 'shared/footer' %>
+</div>
 
 </body>
 </html>
