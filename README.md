@@ -1,1 +1,1 @@
-# flickr-test [![Code Climate](https://codeclimate.com/github/vyper/flickr-test/badges/gpa.svg)](https://codeclimate.com/github/vyper/flickr-test)
+# flickr-test [![Code Climate](https://codeclimate.com/github/vyper/flickr-test/badges/gpa.svg)](https://codeclimate.com/github/vyper/flickr-test) [![Test Coverage](https://codeclimate.com/github/vyper/flickr-test/badges/coverage.svg)](https://codeclimate.com/github/vyper/flickr-test)
