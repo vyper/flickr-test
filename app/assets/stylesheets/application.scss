@@ -3,3 +3,17 @@
 @import 'flat-ui';
 
 @import 'font-awesome';
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+ul li img {
+  cursor: pointer;
+}
