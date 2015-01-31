@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'flat-ui-sass'
+gem 'simple_form'
 
 # Authentication and authorization
 gem 'devise'
