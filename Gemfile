@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Interface
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'flat-ui-sass'
 
 # Authentication and authorization
 gem 'devise'
