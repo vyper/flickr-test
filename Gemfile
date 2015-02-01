@@ -50,6 +50,9 @@ gem 'flickr.rb'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'minitest-rails-capybara'
+  gem 'minitest-reporters'
+
   # Environment variables
   gem 'dotenv-rails'
 
