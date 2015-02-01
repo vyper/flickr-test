@@ -34,6 +34,12 @@ gem 'simple_form'
 gem 'devise'
 gem 'pundit'
 
+# Pagination
+gem 'kaminari'
+
+# Flickr
+gem 'flickr.rb'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,6 +50,12 @@ gem 'pundit'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'minitest-rails-capybara'
+  gem 'minitest-reporters'
+
+  # Environment variables
+  gem 'dotenv-rails'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 

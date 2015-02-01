@@ -3,7 +3,7 @@
     <div class="input-group">
       <%= search_field_tag 'query', params[:query], class: "form-control", placeholder: "Search..." %>
       <span class="input-group-btn">
-        <%= button_tag type: 'submit', class: "btn btn-primary" do %>
+        <%= button_tag id: 'search', type: 'submit', class: "btn btn-primary" do %>
           <i class="fui-search"></i>
         <% end %>
       </span>
@@ -11,10 +11,35 @@
   </div>
 <% end %>
 
+<% if params.include? :query %>
 <div id="pictures" class="container">
   <ul class="row">
-  <% params[:query].size.times do %>
-    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="http://placehold.it/140x100" class="img-thumbnail" /></li>
-  <% end if params.include? :query %>
+  <% @pictures.each do |picture| %>
+    <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+      <%= link_to picture.full_image_url do %>
+        <%= image_tag picture.thumbnail_image_url, title: picture.title, data: { description: picture.description }, class: "image-responsive" %>
+      <% end %>
+    </li>
+  <% end %>
   </ul>
+
+  <%= paginate @pictures %>
+
+  <div class="modal fade" id="pictureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"></h4>
+        </div>
+
+        <div class="modal-body">
+        </div>
+
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<% end %>
