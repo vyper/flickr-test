@@ -34,6 +34,9 @@ gem 'simple_form'
 gem 'devise'
 gem 'pundit'
 
+# Pagination
+gem 'kaminari'
+
 # Flickr
 gem 'flickr.rb'
 
